@@ -3,12 +3,12 @@
 - SVG and PNG icon inputs
 - Multiple pixel ratio support
 - Uses `sharp` for rendering (compatibility with newer Node.js versions and architectures)
-- Supports SDF icons
+- Supports SDF icons ([including proper `@2x` generation](https://github.com/dschep-bug-repos/sdf-2x-generation))
 
 ## Install
 
 ```bash
-npm install @unvt/sprite-one
+npm install github:dschep/sprite-one
 ```
 
 ## Usage
@@ -65,7 +65,7 @@ generateSprite('../out', '../input', [1], true).then(() => {})
 via `bin/index.ts`
 
 ```bash
-git clone https://github.com/unvt/sprite-one.git
+git clone https://github.com/dschep/sprite-one.git
 cd sprite-one
 npm install
 npx ts-node src/bin/index.ts ../../tmp/out --icon ../../tmp/maki/icons
